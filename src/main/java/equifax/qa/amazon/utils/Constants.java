@@ -2,6 +2,6 @@ package equifax.qa.amazon.utils;
 
 public class Constants {
 	
-	public static final int Price = 47;
+	public static final double Price = 47.49;
 
 }

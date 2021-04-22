@@ -19,7 +19,7 @@ public class AmazonAddToCartPageTest extends BaseTest {
 		amazonAddToCartPage = amazonSearchPage.doSelectFirstImage();
 //		amazonProceedToCheckOutPage = amazonAddToCartPage.doClickOnAddToCart();
 		amazonProceedToCheckOut = amazonAddToCartPage.doClickOnAddToCart();
-		Assert.assertEquals(amazonProceedToCheckOut, Constants.Price);
+		Assert.assertEquals(amazonAddToCartPage.getProductPriceFromAddToCartPage(), Constants.Price);
 	 
 
 }

@@ -11,7 +11,7 @@ import equifax.qa.amazon.pages.AmazonAddToCartPage;
 import equifax.qa.amazon.pages.AmazonPage;
 import equifax.qa.amazon.pages.AmazonProceedToCheckOut;
 import equifax.qa.amazon.pages.AmazonSearchPage;
-import equifax.qa.amazon.tests.AmazonProceedToCheckOutPageTest;
+
 
 public class BaseTest {
 	private WebDriver driver;

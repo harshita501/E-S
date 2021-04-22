@@ -5,8 +5,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import equifax.qa.amazon.base.BaseTest;
-import equifax.qa.amazon.pages.AmazonAddToCartPage;
-import equifax.qa.amazon.pages.AmazonProceedToCheckOut;
+
 import equifax.qa.amazon.utils.Constants;
 
 public class AmazonSearchPageTest extends BaseTest {
@@ -19,7 +18,8 @@ public class AmazonSearchPageTest extends BaseTest {
 	@Test(priority = 1)
 	public void amazonSearchPageTest() {
 		amazonAddToCartPage = amazonSearchPage.doSelectFirstImage();
-		Assert.assertEquals(amazonAddToCartPage, Constants.Price);
+		
+		Assert.assertEquals(amazonSearchPage.getProductPriceFromSearcgPage(), Constants.Price);
 	}
 	
 	
